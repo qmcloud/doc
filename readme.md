@@ -1,6 +1,7 @@
 ### 以前做的一个PHP微信扫码关注登录实例，首页判断是否首次关注公众号，扫码关注公众号获取微信用户头像、openid和省市等信息。
 
-第一步：获取关注二维码ticket,并且传参二维码qrcode表主键id
+### 第一步：获取关注二维码ticket,并且传参二维码qrcode表主键id
+```sql
 $sql = "INSERT INTO `qrcode` (`addtime`) VALUES ('" . time() . "')"; 
  
 mysql_query($sql); 
@@ -24,7 +25,9 @@ if (!$json['errcode']) {
     echo '发生错误：错误代码 ' . $json['errcode'] . '，微信返回错误信息：' . $json['errmsg']; 
     exit; 
 }
-第二步：微信服务端接受数据，并且用户登录信息
+```
+### 第二步：微信服务端接受数据，并且用户登录信息
+```
 $postObj = simplexml_load_string($postStr, 'SimpleXMLElement', LIBXML_NOCDATA); 
 $scene_id = str_replace("qrscene_", "", $postObj->EventKey); 
  
@@ -43,9 +46,10 @@ $sql = "UPDATE `qrcode` SET `openid` = '" . $openid . "',logintime='" . time() .
         . ",avatar='" . $userinfo['avatar'] . "',sex='" . $userinfo['sex'] . "',province='" . $userinfo['province'] . "',city='" . $userinfo['city'] . "',country='" . $userinfo['country'] . "' WHERE `id` =" . $scene_id . ""; 
  
 mysql_query($sql);
+```
 
-
-第三步：每隔2秒检测是否关注微信公众号
+### 第三步：每隔2秒检测是否关注微信公众号
+```
 <script> 
     check_login(); 
     function check_login() { 
@@ -64,7 +68,9 @@ mysql_query($sql);
         }, "json"); 
     } 
 </script>
-通过微信openid和access_token获取微信用户信息，并存入表当中的信息如下：
+```
+### 通过微信openid和access_token获取微信用户信息，并存入表当中的信息如下：
+```
 <tr> 
     <th>openid</th> 
     <th>昵称</th> 
@@ -76,3 +82,4 @@ mysql_query($sql);
     <th>是否关注过</th> 
     <th>登录时间</th> 
 </tr>
+```
