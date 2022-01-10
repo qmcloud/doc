@@ -1,3 +1,9 @@
+
+**技术群：**
+![](https://img-blog.csdnimg.cn/20200623093238797.png)
+
+**Dome地址：** https://www.52webrtc.top
+
 ### 以前做的一个PHP微信扫码关注登录实例，首页判断是否首次关注公众号，扫码关注公众号获取微信用户头像、openid和省市等信息。
 
 ### 第一步：获取关注二维码ticket,并且传参二维码qrcode表主键id
