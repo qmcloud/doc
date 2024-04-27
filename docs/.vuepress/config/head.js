@@ -28,7 +28,7 @@ module.exports = [
             })();
             
             ((window.gitter = {}).chat = {}).options = {
-              room: 'DOUBLE-Baller/momo'
+              room: 'qmcloud/momo'
             };
             
             // huoyan
@@ -59,7 +59,7 @@ module.exports = [
             function ABDetected() {
               var adBlockDetected_div = document.createElement("div");
               adBlockDetected_div.style.cssText = "position: absolute; top: 0; left: 0; width: 100%; background: #fc6600; color: #fff; z-index: 9999999999; font-size: 14px; text-align: center; line-height: 1.5; font-weight: bold; padding-top: 6px; padding-bottom: 6px;";
-              adBlockDetected_div.innerHTML = "我们的git地址 <a style='color:#fff;text-decoration:underline' target='_blank' href='https://github.com/DOUBLE-Baller'>请给个start</a>，为了支持本站的长期运营，请将我们的网站 <a style='color: #fff;text-decoration:underline' target='_blank' href='https://wwads.cn/page/whitelist-wwads'>加入广告拦截器的白名单</a>。";
+              adBlockDetected_div.innerHTML = "我们的git地址 <a style='color:#fff;text-decoration:underline' target='_blank' href='https://github.com/qmcloud'>请给个start</a>，为了支持本站的长期运营，请将我们的网站 <a style='color: #fff;text-decoration:underline' target='_blank' href='https://wwads.cn/page/whitelist-wwads'>加入广告拦截器的白名单</a>。";
               document.getElementsByTagName("body")[0].appendChild(adBlockDetected_div);
               // add a close button to the right side of the div
               var adBlockDetected_close = document.createElement("div");

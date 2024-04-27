@@ -7,7 +7,7 @@ module.exports = {
   nav,
   sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
   //logo: '/img/logo.png', // 导航栏logo
-  repo: 'DOUBLE-Baller', // 导航栏右侧生成Github链接
+  repo: 'qmcloud', // 导航栏右侧生成Github链接
   searchMaxSuggestions: 20, // 搜索结果显示最大数
   lastUpdated: 'Last Updated', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
   docsDir: 'docs', // 编辑的文件夹
@@ -49,7 +49,7 @@ module.exports = {
   author: {
     // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
     name: 'Qmu', // 必需
-    link: 'https://github.com/DOUBLE-Baller', // 可选的
+    link: 'https://github.com/qmcloud', // 可选的
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
@@ -69,7 +69,7 @@ module.exports = {
       {
         iconClass: 'icon-github',
         title: 'GitHub',
-        link: 'https://github.com/DOUBLE-Baller',
+        link: 'https://github.com/qmcloud',
       },
       {
         iconClass: 'icon-youjian',
