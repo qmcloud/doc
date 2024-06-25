@@ -36,6 +36,10 @@ module.exports = [
         ],
     },
     {
+        text: '教程',
+        link: '/blog/tutorials/'
+    },
+    {
         text: '案例演示',
         link: '/demo/',
         items: [
@@ -69,12 +73,6 @@ module.exports = [
         text: '源码商城',
         link: 'https://wx.onionnews.cn',
 
-    },
-    {
-        text: '视频教学',
-        items: [
-            { text: '教程', link: '/blog/tutorials/' },
-        ],
     },
     {
         text: '关于',

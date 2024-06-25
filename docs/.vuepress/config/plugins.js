@@ -94,26 +94,6 @@ module.exports = [
     },
   ],
   [
-    'vuepress-plugin-comment', // 评论
-    {
-      choosen: 'gitalk',
-      options: {
-        clientID: '51b4dce978c91ab3d004',
-        clientSecret: 'd0e1ffb10cdbbb18e5ef2f2a29bf6a9ea4e1dcff',
-        repo: 'jap-talk', // GitHub 仓库
-        owner: 'fujieid', // GitHub仓库所有者
-        admin: ['zhangyd-c'], // 对仓库有写权限的人
-        // distractionFreeMode: true,
-        pagerDirection: 'last', // 'first'正序 | 'last'倒序
-        id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-        title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
-        labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-        body:
-          '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
-      },
-    },
-  ],
-  [
     '@vuepress/last-updated', // "上次更新"时间格式
     {
       transformer: (timestamp, lang) => {
@@ -150,18 +130,4 @@ module.exports = [
       // 每篇文章随机添加引流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加引流工具
       random: 1
     }],
-  [
-    "vuepress-plugin-comment",
-    {
-      choosen: "valine",
-      // options选项中的所有参数，会传给Valine的配置
-      options: {
-        el: "#valine-vuepress-comment",
-        appId: "DgRVve7mtiDA7AnIZrlR3NEl-gzGzoHsz",
-        appKey: "bCxDKsiPmzOvw4HnQKHzEIjC",
-        path: '<%- frontmatter.to.path %>'
-
-      }
-    }
-  ],
 ]

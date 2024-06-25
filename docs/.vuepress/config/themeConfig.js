@@ -36,7 +36,7 @@ module.exports = {
   // contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 => 方格 | 2 => 横线 | 3 => 竖线 | 4 => 左斜线 | 5 => 右斜线 | 6 => 点状
 
   updateBar: { // 最近更新栏
-    showToArticle: true, // 显示到文章页底部，默认true
+    showToArticle: false, // 显示到文章页底部，默认true
     moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
   },
   // rightMenuBar: false, // 是否显示右侧文章大纲栏，默认true (屏宽小于1300px下无论如何都不显示)
@@ -48,13 +48,13 @@ module.exports = {
 
   author: {
     // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
-    name: 'Qmu', // 必需
+    name: 'qmcloud', // 必需
     link: 'https://github.com/qmcloud', // 可选的
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
     avatar: 'https://wx.onionnews.cn/wp-content/themes/iDowns/action/qr.php?doctype=1',
-    name: '',
+    name: 'qmcloud',
     slogan: '',
   },
   social: {
