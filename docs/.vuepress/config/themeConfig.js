@@ -98,7 +98,7 @@ module.exports = {
     createYear: 2022, // 博客创建年份
     copyrightInfo:
         'Copyright © 2021-2040 Quanmu. All rights reserved. 圈木云科技 | ' +
-        '<a href="https://beian.miit.gov.cn" target="_blank">粤ICP备19073101号</a>', // 博客版权信息，支持a标签
+        '<a href="https://beian.miit.gov.cn" target="_blank">琼ICP备2022006049号</a>', // 博客版权信息，支持a标签
   },
   htmlModules // 插入hmtl(广告)模块
 }
